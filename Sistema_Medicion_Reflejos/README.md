@@ -14,6 +14,3 @@ Sistema basado en ESP32 que mide el tiempo de reacción de uno o dos jugadores a
 - 1 Pulsador modo Simón
 - 1 Pulsador finalizar juego
 
-## Estado
-
-En desarrollo.
