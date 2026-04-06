@@ -45,17 +45,17 @@ Se ejecuta una rutina predefinida de movimientos. El sistema opera de forma auto
 
 ## Código
 El código del proyecto se encuentra en:
-`/codigo/main.py`
+`main.py`
 
 Incluye lectura ADC, control PWM, manejo de interrupciones y lógica de estados.
 
 ## Evidencia
-Las imágenes del montaje se encuentran en:
-`/imagenes/`
+Las imágenes del montaje se encuentran en el archivo:
+`imagenes.jpeg`
 
 ## Documentación
 El documento completo del proyecto está disponible en:
-`documentacion.pdf`
+`DOCUMENTACIÓN.pdf`
 
 ## Resultados
 Se implementó una grúa robótica funcional con control manual y automático, integrando sensores analógicos, actuadores y manejo de interrupciones en el ESP32.
