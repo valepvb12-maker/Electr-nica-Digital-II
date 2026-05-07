@@ -1,83 +1,94 @@
-Trabajo 4 - Juego Dodger con ESP32
-Descripción
+# Trabajo 4 - Juego Dodger con ESP32
 
-Este proyecto consiste en un juego hecho con ESP32, una pantalla OLED, botones, buzzer y un led.
+## Descripción
+En este trabajo hicimos un juego usando una ESP32, una pantalla OLED, botones, buzzer y un led.
 
-El objetivo del juego es esquivar obstáculos que aparecen en la pantalla mientras el jugador se mueve hacia arriba y abajo. Además, el juego tiene diferentes modos y la dificultad aumenta mientras pasa el tiempo.
+La idea del juego es esquivar obstáculos moviendo el personaje hacia arriba y abajo. También agregamos diferentes modos de juego, sonidos y un sistema donde la dificultad aumenta mientras pasa el tiempo.
 
-Componentes del Sistema
-Entradas
-Botón subir
-Botón bajar
-Botón start
-Procesamiento
-ESP32
-Manejo de estados
-Generación de obstáculos
-Sistema de disparos
-Detección de colisiones
-Control de dificultad
-Salidas
-Pantalla OLED SSD1306
-Buzzer
-LED
-Funcionamiento del Sistema
-Menú
+---
 
-Al iniciar, aparece un menú para seleccionar el modo de juego.
+# Componentes del sistema
 
-Movimiento
+## Entradas
+- Botón subir
+- Botón bajar
+- Botón start
 
-El jugador puede moverse verticalmente usando los botones.
+## Procesamiento
+- ESP32
+- Manejo de estados
+- Movimiento del jugador
+- Generación de obstáculos
+- Sistema de disparos
+- Detección de colisiones
+- Control de dificultad
 
-Obstáculos
+## Salidas
+- Pantalla OLED SSD1306
+- Buzzer
+- Led indicador
 
-Los obstáculos aparecen aleatoriamente y se mueven hacia la izquierda.
+---
 
-Modos de juego
+# Funcionamiento del juego
 
-El juego cuenta con:
+## Menú
+Cuando el juego inicia aparece un menú donde se puede escoger el modo de juego usando los botones.
 
-Clásico
-Tiempo
-Hardcore
-Disparos
+## Movimiento
+El jugador puede moverse verticalmente para esquivar los obstáculos.
 
-En modo hardcore el jugador puede disparar obstáculos.
+## Obstáculos
+Los obstáculos aparecen aleatoriamente y se mueven hacia la izquierda de la pantalla.
 
-Colisiones
+## Modos de juego
+El juego tiene tres modos:
+- Clásico
+- Tiempo
+- Hardcore
 
-Si el jugador choca con un obstáculo, la partida termina.
+Cada modo cambia la dificultad y velocidad del juego.
 
-Sonido
+## Disparos
+En el modo hardcore se pueden lanzar disparos para destruir obstáculos.
 
-El buzzer genera sonidos en diferentes acciones del juego.
+## Colisiones
+Si el jugador toca un obstáculo, el juego termina.
 
-Código
+## Sonido
+El buzzer se usa para dar sonidos cuando pasan acciones dentro del juego.
 
-El código principal se encuentra en:
+---
 
-main.py
+# Código
+El código principal del proyecto se encuentra en:
+
+`main.py`
 
 Incluye:
+- control de botones
+- lógica del juego
+- obstáculos
+- disparos
+- colisiones
+- dibujo en pantalla
+- sonidos
 
-control de botones
-lógica del juego
-obstáculos
-disparos
-colisiones
-dibujo en pantalla
-sonidos
-Evidencia
+---
 
-Las imágenes y videos del funcionamiento se encuentran en la carpeta del proyecto.
+# Evidencia
+Las imágenes y videos del funcionamiento del proyecto se encuentran en la carpeta correspondiente.
 
-Documentación
+---
 
+# Documentación
 La documentación completa del proyecto se encuentra en:
 
-DOCUMENTACION.pdf
+`DOCUMENTACION.pdf`
 
-Resultados
+---
 
-Se logró desarrollar un juego funcional en ESP32 con diferentes modos, sonidos, obstáculos y aumento progresivo de dificultad.
+# Resultados
+Se logró hacer un juego funcional usando la ESP32 y la pantalla OLED.
+
+El juego responde en tiempo real, tiene diferentes modos, sonidos, obstáculos y aumento progresivo de dificultad.
